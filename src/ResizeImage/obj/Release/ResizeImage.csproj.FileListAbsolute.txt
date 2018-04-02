@@ -1,0 +1,5 @@
+c:\users\dell\documents\visual studio 2017\Projects\ResizeImage\ResizeImage\bin\Release\ResizeImage.exe.config
+c:\users\dell\documents\visual studio 2017\Projects\ResizeImage\ResizeImage\bin\Release\ResizeImage.exe
+c:\users\dell\documents\visual studio 2017\Projects\ResizeImage\ResizeImage\bin\Release\ResizeImage.pdb
+c:\users\dell\documents\visual studio 2017\Projects\ResizeImage\ResizeImage\obj\Release\ResizeImage.exe
+c:\users\dell\documents\visual studio 2017\Projects\ResizeImage\ResizeImage\obj\Release\ResizeImage.pdb

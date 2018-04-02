@@ -1,0 +1,6 @@
+c:\users\dell\documents\visual studio 2017\Projects\ResizeImage\ResizeImage\bin\Debug\ResizeImage.exe.config
+c:\users\dell\documents\visual studio 2017\Projects\ResizeImage\ResizeImage\bin\Debug\ResizeImage.exe
+c:\users\dell\documents\visual studio 2017\Projects\ResizeImage\ResizeImage\bin\Debug\ResizeImage.pdb
+c:\users\dell\documents\visual studio 2017\Projects\ResizeImage\ResizeImage\obj\Debug\ResizeImage.csprojResolveAssemblyReference.cache
+c:\users\dell\documents\visual studio 2017\Projects\ResizeImage\ResizeImage\obj\Debug\ResizeImage.exe
+c:\users\dell\documents\visual studio 2017\Projects\ResizeImage\ResizeImage\obj\Debug\ResizeImage.pdb
