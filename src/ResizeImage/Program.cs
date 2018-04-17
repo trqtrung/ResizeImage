@@ -5,12 +5,12 @@ namespace ResizeImage
 {
     public class Program
     {
-        public static string ver = "v20180402";
+        public static string ver = "v20180417";
         static string sourcePath = @"C:\\Photos\Source\";
         static string destinationPath = @"C:\\Photos\Resize\";
         static string processedPath = @"C:\\Photos\Processed\";
-        static int resizeWidthPixel = 2000;
-        static int resizeHeightPixel = 2000;
+        static int resizeWidthPixel = 1500;
+        static int resizeHeightPixel = 1500;
         static void Main(string[] args)
         {
             Console.Title = "Resize Image - " + ver;
@@ -25,9 +25,9 @@ namespace ResizeImage
                     Directory.CreateDirectory(dir);
             }
 
-            if(args.Length > 1)
+            if (args.Length > 1)
             {
-                if(args[0].Contains("square"))
+                if (args[0].Contains("square"))
                 {
                     int number;
 
@@ -38,6 +38,30 @@ namespace ResizeImage
                     }
                 }
             }
+
+
+            Console.WriteLine("Resize resolution: Height: " + resizeHeightPixel + " - Width: " + resizeWidthPixel + ". Are you OK with this or not? Anykey = Yes / N = No ");
+            if (Console.ReadLine().ToLower() == "n")
+            {
+                int enterHeight = 0;
+                while (enterHeight > 4000 || enterHeight < 50)
+                {
+                    Console.WriteLine("Enter Resize Height in px (max 4000px - min: 50px): ");
+                    enterHeight = Convert.ToInt32(Console.ReadLine());
+
+                }
+
+                int enterWidth = 0;
+                while (enterWidth > 4000 || enterWidth < 50)
+                {
+                    Console.WriteLine("Enter Resize Width in px (max 4000px - min: 50px): ");
+                    enterWidth = Convert.ToInt32(Console.ReadLine());
+                }
+                resizeHeightPixel = enterHeight;
+                resizeWidthPixel = enterWidth;
+            }
+
+
 
             try
             {
@@ -52,7 +76,7 @@ namespace ResizeImage
                         Imager.PerformImageResizeAndPutOnCanvas(sourcePath, fileName, resizeWidthPixel, resizeHeightPixel, newFileName, destinationPath);
 
                         MoveFile(imgPath, processedPath + fileName);
-                        
+
                         Console.WriteLine(fileName + " - Resized");
                     }
                     Console.WriteLine("All images in " + sourcePath + " are resized and save in " + destinationPath + " successfully!");
